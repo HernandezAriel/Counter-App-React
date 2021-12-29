@@ -1,11 +1,13 @@
 //FC
 import React from 'react';
 
-const FirstApp = () => {
+const FirstApp = ({greet = 'Hello World'}) => {
+
 
     return (
         <>
-            <h1>Hello World</h1>
+            <h1>{greet}</h1>
+            {/* <pre>{JSON.stringify(num, null, 3)}</pre> */}
             <p>First App</p>
         </>
     );
